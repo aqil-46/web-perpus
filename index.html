@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perpustakaan Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+
+    header {
+      background-color: #1E3A8A;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #a0c4ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #1E3A8A;
+      margin-bottom: 40px;
+    }
+
+    .fitur-container, .buku-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .fitur-box, .buku-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .fitur-box:hover, .buku-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .fitur-box h3, .buku-box h4 {
+      color: #1E3A8A;
+      margin-bottom: 10px;
+    }
+
+    .buku-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1E3A8A;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>PERPUSTAKAAN DIGITAL</h1>
+    </div>
+    <nav class="menu">
+      <a href="login.php">Login</a>
+      <a href="register.php">Daftar</a>
+    </nav>
+  </header>
+
+  <section class="fitur">
+    <h2>Layanan Unggulan</h2>
+    <div class="fitur-container">
+      <div class="fitur-box">
+        <h3>Buku Digital</h3>
+        <p>Akses ribuan koleksi buku elektronik dari berbagai genre dan bidang ilmu.</p>
+      </div>
+      <div class="fitur-box">
+        <h3>Baca Online</h3>
+        <p>Membaca buku cukup lewat sistem online tanpa perlu datang ke lokasi.</p>
+      </div>
+      <div class="fitur-box">
+        <h3>Teknologi</h3>
+        <p>Tersedia buku tentang teknologi untuk kebutuhan penelitian dan tugas akhir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="buku-populer">
+    <h2>Buku Populer</h2>
+    <div class="buku-container">
+      <div class="buku-box">
+        <h4>15 PROGRAM BANTU POPULAR WEB</h4>
+        <p>Wahana</p>
+      </div>
+      <div class="buku-box">
+        <h4>GOAL PROGRAMMING</h4>
+        <p>Siswanto</p>
+      </div>
+      <div class="buku-box">
+        <h4>ALGORITMA DAN STRUKTUR DATA PRO</h4>
+        <p>Nikolaus Wir</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Perpustakaan Digital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
